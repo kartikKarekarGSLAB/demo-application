@@ -1,3 +1,19 @@
 .App {
   text-align: center;
 }
+
+.Company {
+  color: darkcyan;
+  background-color: antiquewhite;
+  margin: auto;
+}
+
+.CIS {
+  border: solid #9C27B0;  
+  background-color: aliceblue;
+}
+
+.SMAC {
+  border: solid chocolate;
+  background-color: moccasin;
+}

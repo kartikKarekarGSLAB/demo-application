@@ -1,8 +1,23 @@
+//Functional Component.
 import React from 'react';
+
+//Inline CSS.
+const style = {
+    border: `black solid`,
+    padding: `10px`,
+    width: `50%`,
+    margin: `auto`,
+    marginTop: `8px`
+}
 
 let Employee = (props) => {
     return (
-    <p>Hey this {props.name} from GSLAB working on {props.project} under {props.pratice}.</p>
+        <p style={style} className={props.pratice}>
+            {props.name} from GSLAB working on {props.project}.
+            <button onClick={props.changePratice} >switch to {props.pratice === `CIS` ? `SMAC` : `CIS`} practice</button>
+            <br/>
+            Update Project Name :<input onChange={props.changeProject} value={props.project}/>
+        </p>
     );
 }
 

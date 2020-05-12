@@ -1,5 +1,6 @@
 //Container.
 import React from 'react';
+import Radium from 'radium';
 import Employee from './../Employee/Employee';
 import './../../styles/Application.css';
 
@@ -33,7 +34,7 @@ const Company = (props) => {
             </div>);
 }
 
-export default Company;
+export default Radium(Company);
 
 // Note :
 /*
